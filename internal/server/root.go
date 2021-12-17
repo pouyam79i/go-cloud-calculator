@@ -3,12 +3,12 @@ package server
 import (
 	"bufio"
 	"fmt"
-	"go-cloud-workspace/internal/server/ops"
+	"go-cloud-calculator/internal/server/ops"
 	"net"
 	"strings"
 )
 
-func Execute(port string) {
+func RunServer(port string) {
 
 	fmt.Println("-> Running server on port: " + port)
 

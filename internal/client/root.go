@@ -9,7 +9,7 @@ import (
 )
 
 // This function runs the client on 'port'
-func Execute(IP_PORT string) {
+func RunClient(IP_PORT string) {
 
 	c, err := net.Dial("tcp", IP_PORT)
 	if err != nil {
