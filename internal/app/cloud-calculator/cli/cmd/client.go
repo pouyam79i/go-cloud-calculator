@@ -2,8 +2,9 @@ package cmd
 
 import (
 	"fmt"
-	"go-cloud-calculator/internal/client"
 	"strings"
+
+	"go-cloud-calculator/internal/pkg/client"
 
 	"github.com/spf13/cobra"
 )

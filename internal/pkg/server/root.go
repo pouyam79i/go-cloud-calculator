@@ -3,9 +3,10 @@ package server
 import (
 	"bufio"
 	"fmt"
-	"go-cloud-calculator/internal/server/ops"
 	"net"
 	"strings"
+
+	"go-cloud-calculator/internal/pkg/server/ops"
 )
 
 func RunServer(port string) {
