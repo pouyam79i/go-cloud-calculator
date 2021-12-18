@@ -1,4 +1,5 @@
 #  "make server  -> runs server on port 8081"
+#  "make echo    -> creates a web serber with echo pkg"
 #  "make client  -> runs client and connects to 127.0.0.1:8081"
 #  "make install -> installs the program"
 #  "make build   -> compiles the code and build a bin file"
@@ -7,6 +8,9 @@
 
 server:
 	go run cmd/cloud-calculator/main.go server 8081
+
+echo:
+	go run cmd/cloud-calculator/main.go echo 8081
 
 client:
 	go run cmd/cloud-calculator/main.go client 127.0.0.1:8081
@@ -26,3 +30,4 @@ compile:
 add-lib:
 	go get -u github.com/spf13/cobra/cobra
 	go get -u github.com/spf13/cobra/viper
+	go get github.com/labstack/echo/v4
